@@ -1,0 +1,49 @@
+{
+  "project": "Lange Number Line Project (LNL)",
+  "component": "LNL/LZR 1024-bit search engine",
+  "version": "LNL-LZR-CE-2",
+  "date": "2026-07-20",
+  "copyright": "Copyright (c) 2026 Mike Lange. All rights reserved.",
+  "host": "AMD EPYC 9V74, Linux x86-64",
+  "primary_workload": {
+    "samples": 20000,
+    "bits": 333,
+    "block": 20260728,
+    "cache_entries": 500000,
+    "runs_per_build": 3
+  },
+  "median_milliseconds": {
+    "v1_portable_engine_fast": 279.348190,
+    "v2_portable_engine_fast": 155.922420,
+    "v2_native_engine_fast": 145.014876,
+    "v2_native_exact_reuse_cold": 150.890837,
+    "v2_native_exact_reuse_warm": 2.410174,
+    "v2_native_trajectory_cache_warm": 7.356848,
+    "v2_pgo_engine_fast_rejected": 152.230457,
+    "v2_pgo_exact_reuse_warm_rejected": 4.092279
+  },
+  "derived_results": {
+    "v1_portable_to_v2_native_throughput_factor": 1.926342,
+    "v1_portable_to_v2_native_time_reduction_percent": 48.088128,
+    "v2_portable_to_native_throughput_factor": 1.075217,
+    "exact_reuse_cold_to_warm_factor": 62.605786,
+    "exact_reuse_vs_trajectory_warm_factor": 3.052414
+  },
+  "cross_width_validation": [
+    {"bits": 128, "samples": 10000, "failures": 0, "warm_transitions": 0},
+    {"bits": 333, "samples": 10000, "failures": 0, "warm_transitions": 0},
+    {"bits": 500, "samples": 5000, "failures": 0, "warm_transitions": 0},
+    {"bits": 768, "samples": 2000, "failures": 0, "warm_transitions": 0},
+    {"bits": 900, "samples": 1000, "failures": 0, "warm_transitions": 0}
+  ],
+  "embedded_book": {
+    "rows": 100000,
+    "failures": 0
+  },
+  "v1_v2_block_344_comparison": {
+    "samples": 25000,
+    "candidate_sequence_equal": true,
+    "strongest_result_equal": true
+  },
+  "scientific_limit": "Exact for tested inputs; not a proof and not a global-record claim."
+}

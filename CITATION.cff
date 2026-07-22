@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the original author and this release."
+type: software
+title: "LNL/LZR 1024-bit Collatz Search Engine V2"
+authors:
+  - family-names: "Lange"
+    given-names: "Mike"
+version: "LNL-LZR-CE-2"
+date-released: 2026-07-20
+license: MIT
+abstract: >-
+  Exact deterministic 1024-bit Collatz search engine developed as part of the
+  Lange Number Line Project (LNL/LZS), with active-limb arithmetic, verified
+  embedded suffix data, and exact completed-result reuse.
+
