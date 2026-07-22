@@ -18,7 +18,7 @@
 
 ## External Research
 
-- Simon DeDeo, "Tuples and Segments"
+- Jacques Pictet, "Tuples and Segments"
 
 - ResearchGate publication:
   "Exploring the influence of prime factors on Collatz conjecture behavior for odd numbers"
